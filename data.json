@@ -1,0 +1,58 @@
+{
+  "estudiantes": [
+    {
+      "id_persona": "1",
+      "nombre": "Juan perez",
+      "email": "Juan@gmail.com",
+      "legajo": "1001"
+    },
+    {
+      "id_persona": "2",
+      "nombre": "Pedro Calvar",
+      "email": "Pedro@gmail.com",
+      "legajo": "1002"
+    }
+  ],
+  "docentes": [
+    {
+      "id_persona": "1",
+      "nombre": "Maria Lopez",
+      "email": "maria@uni.edu",
+      "departamento": "Sistemas"
+    }
+  ],
+  "cursos": [
+    {
+      "id_curso": "1",
+      "nombre": "Sistemas",
+      "id_docente": "1",
+      "cupo": 40
+    },
+    {
+      "id_curso": "2",
+      "nombre": "Programación",
+      "id_docente": "1",
+      "cupo": 30
+    }
+  ],
+  "inscripciones": [
+    {
+      "id_inscripcion": "1",
+      "id_estudiante": "1",
+      "id_curso": "1",
+      "fecha": "2026-06-15"
+    },
+    {
+      "id_inscripcion": "2",
+      "id_estudiante": "1",
+      "id_curso": "2",
+      "fecha": "2026-06-15"
+    },
+    {
+      "id_inscripcion": "3",
+      "id_estudiante": "2",
+      "id_curso": "2",
+      "fecha": "2026-06-15"
+    }
+  ]
+}
