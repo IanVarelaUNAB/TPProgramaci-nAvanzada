@@ -42,6 +42,14 @@ class BuscarPorEmail(EstrategiaBusqueda):
             return q in str(getattr(obj, "email")).strip().lower()
         return False
 
+class BuscarPorLegajo(EstrategiaBusqueda):
+    def coincide(self, obj: object, consulta: str) -> bool:
+        q = consulta.strip().lower()
+        if not q:
+            return False
+        if hasattr(obj, "legajo"):
+            return q == str(getattr(obj, "legajo")).strip().lower()
+        return False
 
 class Buscador:
     def __init__(self, estrategia: EstrategiaBusqueda):

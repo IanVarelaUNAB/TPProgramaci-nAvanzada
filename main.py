@@ -4,7 +4,7 @@ from datetime import date
 
 from modelos import Curso, Docente, Estudiante, Inscripcion
 from repositorio import AlmacenamientoJson, RepositorioAcademico
-from busqueda import Buscador, BuscarPorEmail, BuscarPorId, BuscarPorNombre
+from busqueda import (Buscador, BuscarPorEmail, BuscarPorId, BuscarPorNombre, BuscarPorLegajo)
 
 
 DATA_PATH = "data.json"
@@ -230,7 +230,7 @@ def buscar_estudiante(repo: RepositorioAcademico, buscador: Buscador) -> None:
     print("\n-- Buscar estudiante --")
 
     while True:
-        print("Estrategia: 1) ID  2) Nombre  3) Email")
+        print("Estrategia: 1) ID  2) Nombre  3) Email 4)Legajo")
         e = input("Elegí (o X para cancelar): ").strip()
         if e.lower() == "x":
             raise Cancelado
@@ -242,6 +242,9 @@ def buscar_estudiante(repo: RepositorioAcademico, buscador: Buscador) -> None:
             break
         if e == "3":
             buscador.set_estrategia(BuscarPorEmail())
+            break
+        if e == "4":
+            buscador.set_estrategia(BuscarPorLegajo())
             break
         print("Error: Estrategia inválida")
 
