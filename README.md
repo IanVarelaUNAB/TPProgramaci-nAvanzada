@@ -18,7 +18,8 @@ La aplicación permite administrar estudiantes, docentes, cursos e inscripciones
 
 ---
 
-![Uploading DiagramaUML_PA.png…]()
+<img width="3514" height="3204" alt="DiagramaUML_PA" src="https://github.com/user-attachments/assets/59ef7f3a-6b5d-4bc1-96eb-b69cd8144af3" />
+
 
 ---
 
